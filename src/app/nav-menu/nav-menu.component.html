@@ -1,4 +1,4 @@
-<header>
+<!-- <header>
     <button mat-icon-button [routerLink]="['/']">
       Home
     </button>
@@ -7,4 +7,17 @@
     <a mat-flat-button color="primary" [routerLink]="['/fetch-data']">Fetch Data</a>
     <a mat-flat-button color="primary" [routerLink]="['/countries']">Countries</a>
 
-</header>
+</header> -->
+
+
+<header>
+  <mat-toolbar color="primary">
+      <button mat-icon-button [routerLink]="['/']">
+        <mat-icon>home</mat-icon>
+      </button>
+
+      <a mat-flat-button color="primary" [routerLink]="['/counter']">Counter</a>
+      <a mat-flat-button color="primary" [routerLink]="['/countries']">Countries</a>
+      <a mat-flat-button color="primary" [routerLink]="['/fetch-data']">Fetch Data</a>
+  </mat-toolbar>
+</header> 

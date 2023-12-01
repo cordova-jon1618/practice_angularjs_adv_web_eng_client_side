@@ -13,7 +13,10 @@ import { LoginComponent } from './login/login.component';
 import { MatButtonModule } from "@angular/material/button";
 import { MatFormFieldModule } from "@angular/material/form-field";
 import { MatIconModule } from "@angular/material/icon";
-import { MatToolbarModule } from "@angular/material/toolbar"; 
+import { MatToolbarModule } from "@angular/material/toolbar";
+import { CountriesComponent } from './countries/countries.component';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 @NgModule({
   declarations: [
@@ -22,7 +25,9 @@ import { MatToolbarModule } from "@angular/material/toolbar";
     CounterComponent,
     FetchDataComponent,
     NavMenuComponent,
-    LoginComponent
+    LoginComponent,
+    CountriesComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,9 @@ import { MatToolbarModule } from "@angular/material/toolbar";
     MatButtonModule,
     MatFormFieldModule,
     MatIconModule,
-    MatToolbarModule 
+    MatToolbarModule,
+    ReactiveFormsModule, 
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

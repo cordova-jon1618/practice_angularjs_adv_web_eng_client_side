@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavMenuComponent } from './nav-menu.component';
+import { CountriesComponent } from './countries.component';
 
-describe('NavMenuComponent', () => {
-  let component: NavMenuComponent;
-  let fixture: ComponentFixture<NavMenuComponent>;
+describe('CountriesComponent', () => {
+  let component: CountriesComponent;
+  let fixture: ComponentFixture<CountriesComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [NavMenuComponent]
+      declarations: [CountriesComponent]
     });
-    fixture = TestBed.createComponent(NavMenuComponent);
+    fixture = TestBed.createComponent(CountriesComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
@@ -19,4 +19,3 @@ describe('NavMenuComponent', () => {
     expect(component).toBeTruthy();
   });
 });
-
