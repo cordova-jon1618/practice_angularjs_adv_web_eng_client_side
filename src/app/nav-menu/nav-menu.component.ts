@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class NavMenuComponent {
 
+
+  isLoggedIn: boolean = false;
+
+  constructor() {
+
+  }
+
+  onLogout() {
+
+    console.log('User logged out');
+
+    this.isLoggedIn = false; 
+  }
+
 }

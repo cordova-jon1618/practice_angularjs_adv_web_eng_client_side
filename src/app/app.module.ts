@@ -16,7 +16,9 @@ import { MatIconModule } from "@angular/material/icon";
 import { MatToolbarModule } from "@angular/material/toolbar";
 import { CountriesComponent } from './countries/countries.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule} from '@angular/material/input';
 
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,7 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
 
@@ -39,8 +42,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatToolbarModule,
     ReactiveFormsModule, 
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatInputModule
+
   ],
+
   providers: [],
   bootstrap: [AppComponent]
 })

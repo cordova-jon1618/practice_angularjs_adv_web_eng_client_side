@@ -3,7 +3,7 @@
       Home
     </button>
 
-    <a mat-flat-button color="primary" [routerLink]="['/counter']">Counter</a>
+    <a mat-flat-button color="purple" [routerLink]="['/counter']">Counter</a>
     <a mat-flat-button color="primary" [routerLink]="['/fetch-data']">Fetch Data</a>
     <a mat-flat-button color="primary" [routerLink]="['/countries']">Countries</a>
 
@@ -19,5 +19,10 @@
       <a mat-flat-button color="primary" [routerLink]="['/counter']">Counter</a>
       <a mat-flat-button color="primary" [routerLink]="['/countries']">Countries</a>
       <a mat-flat-button color="primary" [routerLink]="['/fetch-data']">Fetch Data</a>
+
+      <span class="separator"></span>
+      <a mat-flat-button color="primary" *ngIf="!isLoggedIn" color="primary" [routerLink]="['/login']">Login</a>
+      <a mat-flat-button color="primary" *ngIf="isLoggedIn" color="primary" (click)="onLogout()">Logout</a> 
+
   </mat-toolbar>
-</header> 
+</header>
