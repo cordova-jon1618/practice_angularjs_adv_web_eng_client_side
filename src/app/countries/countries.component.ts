@@ -11,7 +11,7 @@ import { environment } from 'src/environments/environment.development';
 })
 export class CountriesComponent {
   countries: Country[] = [];
-  baseUrl: string = 'http://localhost:7182';
+  //baseUrl: string = 'https://localhost:7068'
 
   constructor(http: HttpClient){
     http.get<Country[]>(environment.baseUrl + '/api/countries').subscribe({
